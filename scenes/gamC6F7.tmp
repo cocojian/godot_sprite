@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2flwm8da2ue6"]
+
+[ext_resource type="Texture2D" uid="uid://bp1178n8e7e4o" path="res://assets/paper.webp" id="1_dguun"]
+[ext_resource type="Script" path="res://scenes/game_scene.gd" id="1_p87g5"]
+[ext_resource type="Texture2D" uid="uid://d1615oi2y3gvx" path="res://assets/pen.png" id="2_4qsne"]
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource("1_p87g5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1025.0
+offset_bottom = 1025.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dguun")
+
+[node name="Pen" type="Sprite2D" parent="."]
+position = Vector2(416, 201)
+scale = Vector2(0.185547, 0.185547)
+texture = ExtResource("2_4qsne")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 289.0
+offset_top = 300.0
+offset_right = 774.0
+offset_bottom = 820.0
+theme_override_font_sizes/italics_font_size = 1
+text = "使徒行传的文字冒险开始了。
+"
+visible_characters = 0
