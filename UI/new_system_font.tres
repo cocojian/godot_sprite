@@ -1,7 +1,6 @@
 [gd_resource type="SystemFont" format=3 uid="uid://hw8xf35yy2pu"]
 
 [resource]
-font_names = PackedStringArray("Franklin Gothic")
 hinting = 2
 msdf_pixel_range = 23
 msdf_size = 54

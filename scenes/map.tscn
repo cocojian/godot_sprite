@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpyceqwj3df1g"]
+
+[ext_resource type="Texture2D" uid="uid://d1615oi2y3gvx" path="res://assets/pen.png" id="1_04rmp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Pen" type="Sprite2D" parent="."]
+position = Vector2(558, 370)
+texture = ExtResource("1_04rmp")

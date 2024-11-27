@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2flwm8da2ue6"]
+
+[ext_resource type="Texture2D" uid="uid://bp1178n8e7e4o" path="res://assets/paper.webp" id="1_dguun"]
+[ext_resource type="Script" path="res://scenes/game_scene.gd" id="1_p87g5"]
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource("1_p87g5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1025.0
+offset_bottom = 1025.0
+texture = ExtResource("1_dguun")
+
+[node name="TextLabel" type="RichTextLabel" parent="."]
+offset_left = 323.0
+offset_top = 314.0
+offset_right = 753.0
+offset_bottom = 881.0
+theme_override_colors/default_color = Color(0.457564, 0, 0, 1)
+theme_override_constants/line_separation = 5
+theme_override_font_sizes/normal_font_size = 25
+text = "
+"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="ContinueButton" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 469.0
+offset_top = 814.0
+offset_right = 596.0
+offset_bottom = 846.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.494118, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "继 续"
+flat = true

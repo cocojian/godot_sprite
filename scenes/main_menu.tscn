@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://du2g6o87728yt"]
+[gd_scene load_steps=7 format=3 uid="uid://du2g6o87728yt"]
 
 [ext_resource type="Texture2D" uid="uid://bdd5h8pwmmt3v" path="res://assets/bg.webp" id="1_6n0ro"]
+[ext_resource type="FontFile" uid="uid://c2ewbypw078q5" path="res://font/SourceHanSansCN-Normal.otf" id="2_8ajkm"]
 [ext_resource type="SystemFont" uid="uid://hw8xf35yy2pu" path="res://UI/new_system_font.tres" id="2_w6q2m"]
 [ext_resource type="LabelSettings" uid="uid://bpdfghymj4hsx" path="res://UI/title.tres" id="3_nuy1o"]
 
@@ -13,7 +14,7 @@ func _on_start_game_pressed():
 
 func _on_continue_game_pressed():
 	# 加载存档（这里是占位逻辑，可扩展为实际存档系统）
-	print(\"继续游戏：加载存档数据\")
+	print(\"继续游戏：加载存档数据11\")
 	get_tree().change_scene_to_file(\"res://scenes/game_scene.tscn\")  # 同样切换到主场景
 
 func _on_exit_game_pressed():
@@ -56,7 +57,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.592448, 2.20198e-06, 4.33177e-07, 1)
-theme_override_fonts/font = ExtResource("2_w6q2m")
+theme_override_fonts/font = ExtResource("2_8ajkm")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxTexture_dr1cs")
 text = "开始游戏"
